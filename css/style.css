@@ -1,0 +1,47 @@
+html {
+	margin: auto;
+    width: 60%;
+}
+
+body {
+    font-family: "Verdana", sans-serif;
+	background-color: #c0c0c0;
+}
+
+header {
+	border-bottom-color: red;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+}
+
+main {
+	border-bottom-color: red;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+}
+
+#accomplishments {
+	font-style: italic;
+}
+
+aside {
+	font-size: 75%;
+	border-bottom-color: red;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+}
+
+footer {
+	font-size: 50%;
+}
+
+h1 {
+	background-color: blue;
+	color: white;
+}
+
+p {
+	line-height: 1.5;
+}
+
+
