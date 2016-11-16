@@ -1,47 +1,103 @@
 html {
-	margin: auto;
-    width: 60%;
+	min-height: 100%;
 }
 
 body {
-    font-family: "Verdana", sans-serif;
-	background-color: #c0c0c0;
+	margin: auto;
+    padding: 0;
+	/*Fall back for gradient*/
+	background-color: SteelBlue;
+	background-image: linear-gradient(AliceBlue, SteelBlue);
+	font-family: "Ariel";
+	width: 55em;
+
+
 }
 
-header {
-	border-bottom-color: red;
-	border-bottom-width: 4px;
-	border-bottom-style: solid;
+.wrapper {
+    background-color: white;
+    padding: 1em;
+
 }
 
-main {
-	border-bottom-color: red;
-	border-bottom-width: 4px;
-	border-bottom-style: solid;
+.main {
+	width: 62.5%;
+	padding: 5px;
+	background: #CCCCCC;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
 }
 
-#accomplishments {
-	font-style: italic;
+.nav-bar {
+	border-bottom: 1px solid #C8C8C8;
+	background-color: #F7F7F7;
 }
 
-aside {
-	font-size: 75%;
-	border-bottom-color: red;
-	border-bottom-width: 4px;
-	border-bottom-style: solid;
+.nav-bar li { 
+    display: inline;
+    border-left: 1px solid #C8C8C8;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
-footer {
-	font-size: 50%;
+.nav-bar li:first-child {
+	border-left: none;
 }
 
-h1 {
-	background-color: blue;
-	color: white;
+.nav-bar a:link, a:visited {
+	font-size: 11px;
+	text-decoration: none;
+	color: blue;
 }
 
-p {
-	line-height: 1.5;
+#navigation-list {
+	border-top: 3px solid blue;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
+
+#title {
+	text-align: center;
+}
+
+#book-image{
+	width:50%;
+	float: left;
+}
+
+#book-description{
+	width:50%;
+	float: right;
+	text-align: justify;
+}
+
+.horizontalRule {
+    width: 100%
+    font-size: 1px;
+    color: rgba(0, 0, 0, 0);
+    line-height: 1px;
+    
+    background-color: grey;
+    margin-top: -6px;
+    margin-bottom: 10px;
+}
+
+.sidebar {
+	width: 28%;
+	float: right;
+	padding: 5px;
+	background: #F7F7F7;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.aside-list-item {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
 
 
