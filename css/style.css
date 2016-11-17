@@ -4,51 +4,44 @@ html {
 
 body {
 	margin: auto;
-    padding: 0;
 	/*Fall back for gradient*/
 	background-color: SteelBlue;
 	background-image: linear-gradient(AliceBlue, SteelBlue);
-	font-family: "Ariel";
+	font-family: "Arial";
 	width: 55em;
-
-
 }
 
 .wrapper {
     background-color: white;
     padding: 1em;
+    height: 100%;
 
 }
 
 .main {
 	width: 62.5%;
 	padding: 5px;
+	float: left;
 	background: #CCCCCC;
 	-webkit-border-radius: 15px;
 	border-radius: 15px;
 }
 
+.main a:visited {
+	color: Maroon;
+}
+
 .nav-bar {
 	border-bottom: 1px solid #C8C8C8;
 	background-color: #F7F7F7;
+	height: 35px;
+	/*padding-left: 1em;*/
+
+	margin: 0;
+	list-style-type: none;
+	border-top: 3px solid blue;
 }
 
-.nav-bar li { 
-    display: inline;
-    border-left: 1px solid #C8C8C8;
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-.nav-bar li:first-child {
-	border-left: none;
-}
-
-.nav-bar a:link, a:visited {
-	font-size: 11px;
-	text-decoration: none;
-	color: blue;
-}
 
 #navigation-list {
 	border-top: 3px solid blue;
@@ -57,19 +50,55 @@ body {
     padding: 0;
 }
 
+
+.nav-bar li { 
+    display: inline;
+    text-transform: uppercase;
+    border-left: 1px solid #C8C8C8;
+}
+
+.nav-bar li:first-child {
+	border-left: none;
+}
+
+.nav-bar a:link, a:visited {
+	font-size: 17px;
+	font-family: "Arial";
+	font-weight: bold;
+	text-decoration: none;
+	color: blue;
+}
+
+.nav-bar a:hover {
+	color: #F7F7F7;
+	background-color: blue;	
+}
+
+
+
 #title {
 	text-align: center;
+	color: DimGrey;
+	text-shadow: 2px 2px LightGrey;
+	text-size: 1.5em;
 }
 
 #book-image{
-	width:50%;
+	width: 50%;
 	float: left;
 }
 
-#book-description{
-	width:50%;
-	float: right;
+.main p {
 	text-align: justify;
+}
+
+.main {
+	padding: 1em;
+}
+
+#book-description{
+	width: 50%;
+	float: right;
 }
 
 .horizontalRule {
@@ -83,6 +112,9 @@ body {
     margin-bottom: 10px;
 }
 
+/******
+Side Bar Stylings
+*****/
 .sidebar {
 	width: 28%;
 	float: right;
@@ -90,14 +122,91 @@ body {
 	background: #F7F7F7;
 	-webkit-border-radius: 15px;
 	border-radius: 15px;
+	border: 1px solid LightGrey;
 }
 
-.aside-list-item {
+.sidebar ul {
 	list-style-type: none;
+	color: DarkBlue;
     margin: 0;
     padding: 0;
 }
 
+.sidebar a:link, a:visited {
+	font-size: 17px;
+	font-family: "Arial";
+	font-weight: bold;
+	text-decoration: none;
+	color: DarkBlue;
+}
+
+.sidebar a:hover {
+	
+}
+
+#recent-books {
+	color: DarkBlue;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+/*******
+Footer Stylings
+*******/
+.footer {
+	border-top: 1px solid #C8C8C8;
+	text-align: center;
+	font-size: 10px;
+	color: LightSlateGrey;
+	font-family: "Arial";
+	font-weight: lighter;
+	font-size: .5em;
+}
+
+.social-sites li {
+	display: inline;
+}
+
+.social-sites a:hover {
+	opacity: .75;
+}
+
+.links-footer li { 
+    display: inline;
+
+    border-left: 1px solid #C8C8C8;
+}
+
+.links-footer li:first-child {
+	border-left: none;
+}
+
+.links-footer a {
+	text-decoration: none;
+	color: blue;
+	padding: .5em .5em .5em .5em;
+}
+
+.links-footer a:hover {
+	text-decoration: underline;
+}
+
+/******
+Clear fix
+*******/
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
 
 
 
